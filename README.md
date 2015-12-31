@@ -1,5 +1,7 @@
 # noscroll
 
+**WARNING:** Using this will likely break any website that has infinite scrolling, lazy loading of images, viewport anchoring and more.
+
 Web developers can not be trusted with the scroll event. This extension blocks them from using it.
 
 It blocks the following events:
