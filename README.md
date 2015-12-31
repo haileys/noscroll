@@ -4,7 +4,7 @@ The scroll event handler is often used to implement custom smooth<sup>[sic]</sup
 
 This Chrome extension blocks web pages from attaching to certain scroll-related events, meaning that you never again have to be annoyed by a web page's broken custom scrolling.
 
-It works by hijacking the `EventTarget.prototype.addEventListener` function and preventing any event listeners from being attached to the following event types:
+It works by hijacking the `EventTarget.prototype.addEventListener` function (yes, the irony of hijacking native behaviour to prevent the hijacking of native behaviour is not lost on me) and preventing any event listeners from being attached to the following event types:
 
 * `scroll`
 * `scrollstop`
