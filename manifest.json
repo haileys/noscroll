@@ -1,0 +1,15 @@
+{
+  "name": "noscroll",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Web developers can not be trusted with overriding the scroll event. This extension blocks them from doing it.",
+  "homepage_url": "https://github.com/charliesome/noscroll",
+  "permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "run_at": "document_start",
+      "js": ["noscroll.js"]
+    }
+  ]
+}
