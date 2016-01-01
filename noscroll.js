@@ -14,8 +14,6 @@ function injected() {
                 return;
             }
 
-            console.log("addEventListener", type);
-
             return oldAddEventListener.apply(this, arguments);
         }
     });
